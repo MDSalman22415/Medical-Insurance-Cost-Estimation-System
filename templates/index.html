@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Predict</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .body-form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #357abd;
+        }
+
+        #prediction {
+            text-align: center;
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="body-form">
+
+        <h1>Medical Insurance Cost Prediction</h1>
+
+        <form>
+
+            <label>Age</label>
+            <input type="text" name="age">
+
+            <label>Gender</label>
+            <select name="sex">
+                {% for s in sex %}
+                    <option value="{{s}}">{{s}}</option>
+                {% endfor %}
+            </select>
+
+            <label>BMI</label>
+            <input type="text" name="bmi">
+
+            <label>Children</label>
+            <input type="text" name="children">
+
+            <label>Smoker</label>
+            <select name="smoker">
+                {% for s in smoker %}
+                    <option value="{{s}}">{{s}}</option>
+                {% endfor %}
+            </select>
+
+            <label>Region</label>
+            <select name="region">
+                {% for r in region %}
+                    <option value="{{r}}">{{r}}</option>
+                {% endfor %}
+            </select>
+
+            <button type="button" onclick="send_data()">Predict</button>
+
+        </form>
+
+        <h2 id="prediction"></h2>
+
+    </div>
+</div>
+
+<script>
+
+function send_data() {
+
+    var fd = new FormData(document.querySelector("form"));
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", "/predict", true);
+
+    document.getElementById("prediction").innerHTML =
+        "Calculating...";
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            document.getElementById("prediction").innerHTML =
+                "Prediction: ₹" + xhr.responseText;
+        }
+    };
+
+    xhr.send(fd);
+}
+
+</script>
+
+</body>
+</html>
