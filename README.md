@@ -1,6 +1,6 @@
 ﻿# Medical Insurance Cost Prediction
 
-![Home Page](images/Project baner)
+<img src="images/" width="1000">
 
 ## 📌 Project Overview
 
