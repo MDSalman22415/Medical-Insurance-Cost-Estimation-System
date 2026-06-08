@@ -65,7 +65,7 @@ Insurance charges increase as age increases.
 
 ### Visualization
 
-<img src="" width="1000">
+<img src="Age vs insurance charges" width="1000">
 
 ---
 
