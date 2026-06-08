@@ -1,6 +1,6 @@
 ﻿# Medical Insurance Cost Prediction
 
-![Home Page](images/C:\Users\md salman\Desktop\Gemini_Generated_Image_u3gikku3gikku3gi.png)
+![Home Page](images/Corelation metirx)
 
 ## 📌 Project Overview
 
