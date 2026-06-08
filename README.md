@@ -49,7 +49,7 @@ Smoking has a significant impact on medical insurance costs.
 
 ### Visualization
 
-<img src="" width="1000">
+<img src="Smoke vs Insurance charges images" width="1000">
 
 ---
 
