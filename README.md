@@ -49,7 +49,7 @@ Smoking has a significant impact on medical insurance costs.
 
 ### Visualization
 
-![Smoking Analysis](images/Screenshot 2026-06-08 091525.png)
+<img src="" width="1000">
 
 ---
 
@@ -65,7 +65,7 @@ Insurance charges increase as age increases.
 
 ### Visualization
 
-![Age Analysis](images/C:\Users\md salman\Pictures\Screenshots\Screenshot 2026-06-08 091700.png)
+<img src="" width="1000">
 
 ---
 
@@ -81,7 +81,7 @@ Customers with higher BMI tend to incur higher insurance charges.
 
 ### Visualization
 
-![BMI Analysis](images/C:\Users\md salman\Pictures\Screenshots\Screenshot 2026-06-08 091755.png)
+<img src="" width="1000">
 
 ---
 
@@ -97,7 +97,7 @@ Insurance charges remain relatively similar across all regions.
 
 ### Visualization
 
-![Regional Analysis](images/C:\Users\md salman\Pictures\Screenshots\Screenshot 2026-06-08 091826.png)
+<img src="" width="1000">
 
 ---
 
@@ -114,7 +114,7 @@ Among numerical features:
 
 ### Visualization
 
-![Correlation Analysis](images/C:\Users\md salman\Pictures\Screenshots\Screenshot 2026-06-08 091903.png)
+<img src="" width="1000">
 
 ---
 
