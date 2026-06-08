@@ -114,7 +114,7 @@ Among numerical features:
 
 ### Visualization
 
-<img src="" width="1000">
+<img src="Corelation metirx" width="1000">
 
 ---
 
