@@ -1,6 +1,6 @@
 ﻿# Medical Insurance Cost Prediction
 
-![Home Page](images/Corelation metirx)
+![Home Page](images/Project baner)
 
 ## 📌 Project Overview
 
