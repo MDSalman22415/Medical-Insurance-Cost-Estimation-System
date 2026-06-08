@@ -81,7 +81,7 @@ Customers with higher BMI tend to incur higher insurance charges.
 
 ### Visualization
 
-<img src="" width="1000">
+<img src="BMI vs Insurance charges" width="1000">
 
 ---
 
