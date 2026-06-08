@@ -97,7 +97,7 @@ Insurance charges remain relatively similar across all regions.
 
 ### Visualization
 
-<img src="" width="1000">
+<img src="Region vs Insurance charges" width="1000">
 
 ---
 
